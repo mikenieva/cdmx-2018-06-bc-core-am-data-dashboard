@@ -3,9 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Elige una sede</h2>
+        </div>
+        <div class="col">
+          <select name="" id="sede">
+            <option>Sede</option>
+            <option value="LIMA">LIMA</option>
+            <option value="MEXICO">CDMX</option>
+            <option value="SANTIAGO">SCL</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Email</th>
+                <th scope="col">Sede</th>
+                <th scope="col">Generación</th>
+                <th scope="col">% Completitud</th>
+              </tr>
+            </thead>
+            <tbody id="estadistica"></tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+    <div id="hola"></div>
+        
+    <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
